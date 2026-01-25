@@ -1,0 +1,526 @@
+<svg width="600" height="1800" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<!-- ============================================================================
+     Celeste Dark Theme - Kvantum SVG
+     🏔️ Mountain | 🍓 Strawberry | 💎 Crystal | 🪶 Feather
+     ============================================================================ -->
+
+<!-- ============================================================================
+     CHECKBOX - 🍓 Strawberry Collection (16x16)
+     ============================================================================ -->
+
+<!-- Unchecked states -->
+<rect id="checkbox-normal" x="10" y="10" width="16" height="16" rx="3" ry="3" fill="#2C3E50"/>
+<rect id="checkbox-focused" x="30" y="10" width="16" height="16" rx="3" ry="3" fill="#3D4E5C"/>
+<rect id="checkbox-pressed" x="50" y="10" width="16" height="16" rx="3" ry="3" fill="#253545"/>
+<rect id="checkbox-disabled" x="70" y="10" width="16" height="16" rx="3" ry="3" fill="#1E2832"/>
+
+<!-- Checked states (🍓 Strawberry pink) -->
+<g id="checkbox-checked-normal">
+  <rect x="90" y="10" width="16" height="16" rx="3" ry="3" fill="#E07A9B"/>
+  <path d="M94,18 L97,21 L102,14" stroke="#F0EDE5" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="checkbox-checked-focused">
+  <rect x="110" y="10" width="16" height="16" rx="3" ry="3" fill="#F4A6B8"/>
+  <path d="M114,18 L117,21 L122,14" stroke="#F0EDE5" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="checkbox-checked-pressed">
+  <rect x="130" y="10" width="16" height="16" rx="3" ry="3" fill="#C85A7B"/>
+  <path d="M134,18 L137,21 L142,14" stroke="#F0EDE5" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="checkbox-checked-disabled">
+  <rect x="150" y="10" width="16" height="16" rx="3" ry="3" fill="#5A8CAE"/>
+  <path d="M154,18 L157,21 L162,14" stroke="#B8C5D0" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+<!-- Tristate -->
+<g id="checkbox-tristate-normal">
+  <rect x="170" y="10" width="16" height="16" rx="3" ry="3" fill="#86BBD8"/>
+  <rect x="174" y="17" width="8" height="2" rx="1" fill="#1E2832"/>
+</g>
+
+<!-- ============================================================================
+     RADIO BUTTON - 💎 Crystal Orbs (16x16)
+     ============================================================================ -->
+
+<!-- Unchecked states -->
+<circle id="radio-normal" cx="18" cy="50" r="7" fill="#2C3E50"/>
+<circle id="radio-focused" cx="38" cy="50" r="7" fill="#3D4E5C"/>
+<circle id="radio-pressed" cx="58" cy="50" r="7" fill="#253545"/>
+<circle id="radio-disabled" cx="78" cy="50" r="7" fill="#1E2832"/>
+
+<!-- Checked states (💎 Crystal blue) -->
+<g id="radio-checked-normal">
+  <circle cx="98" cy="50" r="7" fill="#86BBD8"/>
+  <circle cx="98" cy="50" r="3" fill="#1E2832"/>
+</g>
+<g id="radio-checked-focused">
+  <circle cx="118" cy="50" r="7" fill="#7FCAE5"/>
+  <circle cx="118" cy="50" r="3" fill="#253545"/>
+</g>
+<g id="radio-checked-pressed">
+  <circle cx="138" cy="50" r="7" fill="#5A8CAE"/>
+  <circle cx="138" cy="50" r="3" fill="#1E2832"/>
+</g>
+<g id="radio-checked-disabled">
+  <circle cx="158" cy="50" r="7" fill="#4A5F75"/>
+  <circle cx="158" cy="50" r="3" fill="#253545"/>
+</g>
+
+<!-- ============================================================================
+     BUTTONS - Ice Platforms (Simple flat fills, no inset)
+     ============================================================================ -->
+
+<rect id="button-normal" x="10" y="70" width="60" height="24" fill="#2C3E50"/>
+<rect id="button-focused" x="80" y="70" width="60" height="24" fill="#3D4E5C"/>
+<rect id="button-pressed" x="150" y="70" width="60" height="24" fill="#253545"/>
+<rect id="button-toggled" x="220" y="70" width="60" height="24" fill="#86BBD8"/>
+<rect id="button-disabled" x="290" y="70" width="60" height="24" fill="#1E2832"/>
+
+<!-- ============================================================================
+     FOCUS FRAME - 💎 Dash Glow
+     ============================================================================ -->
+
+<rect id="focus-normal" x="10" y="100" width="60" height="24" fill="none" stroke="#86BBD8" stroke-width="2"/>
+
+<!-- ============================================================================
+     LINEEDIT - Crystal Cavern
+     ============================================================================ -->
+
+<rect id="lineedit-normal" x="10" y="130" width="100" height="24" fill="#1E2832"/>
+<rect id="lineedit-focused" x="120" y="130" width="100" height="24" fill="#253545"/>
+<rect id="lineedit-disabled" x="230" y="130" width="100" height="24" fill="#151C24"/>
+
+<!-- ============================================================================
+     COMBOBOX - Crystal Selector
+     ============================================================================ -->
+
+<rect id="combo-normal" x="10" y="160" width="80" height="24" fill="#2C3E50"/>
+<rect id="combo-focused" x="100" y="160" width="80" height="24" fill="#3D4E5C"/>
+<rect id="combo-pressed" x="190" y="160" width="80" height="24" fill="#253545"/>
+<rect id="combo-disabled" x="280" y="160" width="80" height="24" fill="#1E2832"/>
+
+<!-- ============================================================================
+     SLIDER GROOVE - 9-slice structure for proper scaling
+     ============================================================================ -->
+
+<!-- Normal (empty groove) -->
+<path id="slider-normal-topleft" d="M10,200 C10,196.7 12.7,194 16,194 L16,200 Z" fill="#1E2832"/>
+<rect id="slider-normal-top" x="16" y="194" width="20" height="6" fill="#1E2832"/>
+<path id="slider-normal-topright" d="M36,194 C39.3,194 42,196.7 42,200 L36,200 Z" fill="#1E2832"/>
+<rect id="slider-normal-left" x="10" y="200" width="6" height="10" fill="#1E2832"/>
+<rect id="slider-normal" x="16" y="200" width="20" height="10" fill="#1E2832"/>
+<rect id="slider-normal-right" x="36" y="200" width="6" height="10" fill="#1E2832"/>
+<path id="slider-normal-bottomleft" d="M10,210 C10,213.3 12.7,216 16,216 L16,210 Z" fill="#1E2832"/>
+<rect id="slider-normal-bottom" x="16" y="210" width="20" height="6" fill="#1E2832"/>
+<path id="slider-normal-bottomright" d="M36,216 C39.3,216 42,213.3 42,210 L36,210 Z" fill="#1E2832"/>
+
+<!-- Toggled (filled part - 💎 Cyan crystal) -->
+<path id="slider-toggled-topleft" d="M50,200 C50,196.7 52.7,194 56,194 L56,200 Z" fill="#7FCAE5"/>
+<rect id="slider-toggled-top" x="56" y="194" width="20" height="6" fill="#7FCAE5"/>
+<path id="slider-toggled-topright" d="M76,194 C79.3,194 82,196.7 82,200 L76,200 Z" fill="#7FCAE5"/>
+<rect id="slider-toggled-left" x="50" y="200" width="6" height="10" fill="#7FCAE5"/>
+<rect id="slider-toggled" x="56" y="200" width="20" height="10" fill="#7FCAE5"/>
+<rect id="slider-toggled-right" x="76" y="200" width="6" height="10" fill="#7FCAE5"/>
+<path id="slider-toggled-bottomleft" d="M50,210 C50,213.3 52.7,216 56,216 L56,210 Z" fill="#7FCAE5"/>
+<rect id="slider-toggled-bottom" x="56" y="210" width="20" height="6" fill="#7FCAE5"/>
+<path id="slider-toggled-bottomright" d="M76,216 C79.3,216 82,213.3 82,210 L76,210 Z" fill="#7FCAE5"/>
+
+<!-- Disabled groove -->
+<path id="slider-disabled-topleft" d="M90,200 C90,196.7 92.7,194 96,194 L96,200 Z" fill="#151C24"/>
+<rect id="slider-disabled-top" x="96" y="194" width="20" height="6" fill="#151C24"/>
+<path id="slider-disabled-topright" d="M116,194 C119.3,194 122,196.7 122,200 L116,200 Z" fill="#151C24"/>
+<rect id="slider-disabled-left" x="90" y="200" width="6" height="10" fill="#151C24"/>
+<rect id="slider-disabled" x="96" y="200" width="20" height="10" fill="#151C24"/>
+<rect id="slider-disabled-right" x="116" y="200" width="6" height="10" fill="#151C24"/>
+<path id="slider-disabled-bottomleft" d="M90,210 C90,213.3 92.7,216 96,216 L96,210 Z" fill="#151C24"/>
+<rect id="slider-disabled-bottom" x="96" y="210" width="20" height="6" fill="#151C24"/>
+<path id="slider-disabled-bottomright" d="M116,216 C119.3,216 122,213.3 122,210 L116,210 Z" fill="#151C24"/>
+
+<!-- ============================================================================
+     SLIDER CURSOR - Crystal Handle (circular)
+     ============================================================================ -->
+
+<circle id="slidercursor-normal" cx="150" cy="205" r="9" fill="#4A5F75"/>
+<circle id="slidercursor-focused" cx="175" cy="205" r="9" fill="#86BBD8"/>
+<circle id="slidercursor-pressed" cx="200" cy="205" r="9" fill="#7FCAE5"/>
+<circle id="slidercursor-disabled" cx="225" cy="205" r="9" fill="#3D4E5C"/>
+
+<!-- ============================================================================
+     SCROLLBAR SLIDER - Thin colored bar (💎 Crystal blue)
+     ============================================================================ -->
+
+<!-- Normal (subtle) -->
+<path id="scrollbarslider-normal-topleft" d="M10,240 C10,237.8 11.8,236 14,236 L14,240 Z" fill="#5A8CAE"/>
+<rect id="scrollbarslider-normal-top" x="14" y="236" width="4" height="4" fill="#5A8CAE"/>
+<path id="scrollbarslider-normal-topright" d="M18,236 C20.2,236 22,237.8 22,240 L18,240 Z" fill="#5A8CAE"/>
+<rect id="scrollbarslider-normal-left" x="10" y="240" width="4" height="30" fill="#5A8CAE"/>
+<rect id="scrollbarslider-normal" x="14" y="240" width="4" height="30" fill="#5A8CAE"/>
+<rect id="scrollbarslider-normal-right" x="18" y="240" width="4" height="30" fill="#5A8CAE"/>
+<path id="scrollbarslider-normal-bottomleft" d="M10,270 C10,272.2 11.8,274 14,274 L14,270 Z" fill="#5A8CAE"/>
+<rect id="scrollbarslider-normal-bottom" x="14" y="270" width="4" height="4" fill="#5A8CAE"/>
+<path id="scrollbarslider-normal-bottomright" d="M18,274 C20.2,274 22,272.2 22,270 L18,270 Z" fill="#5A8CAE"/>
+
+<!-- Focused (brighter crystal) -->
+<path id="scrollbarslider-focused-topleft" d="M30,240 C30,237.8 31.8,236 34,236 L34,240 Z" fill="#86BBD8"/>
+<rect id="scrollbarslider-focused-top" x="34" y="236" width="4" height="4" fill="#86BBD8"/>
+<path id="scrollbarslider-focused-topright" d="M38,236 C40.2,236 42,237.8 42,240 L38,240 Z" fill="#86BBD8"/>
+<rect id="scrollbarslider-focused-left" x="30" y="240" width="4" height="30" fill="#86BBD8"/>
+<rect id="scrollbarslider-focused" x="34" y="240" width="4" height="30" fill="#86BBD8"/>
+<rect id="scrollbarslider-focused-right" x="38" y="240" width="4" height="30" fill="#86BBD8"/>
+<path id="scrollbarslider-focused-bottomleft" d="M30,270 C30,272.2 31.8,274 34,274 L34,270 Z" fill="#86BBD8"/>
+<rect id="scrollbarslider-focused-bottom" x="34" y="270" width="4" height="4" fill="#86BBD8"/>
+<path id="scrollbarslider-focused-bottomright" d="M38,274 C40.2,274 42,272.2 42,270 L38,270 Z" fill="#86BBD8"/>
+
+<!-- Pressed (brightest) -->
+<path id="scrollbarslider-pressed-topleft" d="M50,240 C50,237.8 51.8,236 54,236 L54,240 Z" fill="#7FCAE5"/>
+<rect id="scrollbarslider-pressed-top" x="54" y="236" width="4" height="4" fill="#7FCAE5"/>
+<path id="scrollbarslider-pressed-topright" d="M58,236 C60.2,236 62,237.8 62,240 L58,240 Z" fill="#7FCAE5"/>
+<rect id="scrollbarslider-pressed-left" x="50" y="240" width="4" height="30" fill="#7FCAE5"/>
+<rect id="scrollbarslider-pressed" x="54" y="240" width="4" height="30" fill="#7FCAE5"/>
+<rect id="scrollbarslider-pressed-right" x="58" y="240" width="4" height="30" fill="#7FCAE5"/>
+<path id="scrollbarslider-pressed-bottomleft" d="M50,270 C50,272.2 51.8,274 54,274 L54,270 Z" fill="#7FCAE5"/>
+<rect id="scrollbarslider-pressed-bottom" x="54" y="270" width="4" height="4" fill="#7FCAE5"/>
+<path id="scrollbarslider-pressed-bottomright" d="M58,274 C60.2,274 62,272.2 62,270 L58,270 Z" fill="#7FCAE5"/>
+
+<!-- ============================================================================
+     PROGRESSBAR - 🍓 Strawberry Collection
+     ============================================================================ -->
+
+<!-- Background (groove) -->
+<path id="progress-normal-topleft" d="M10,300 C10,296.7 12.7,294 16,294 L16,300 Z" fill="#1E2832"/>
+<rect id="progress-normal-top" x="16" y="294" width="40" height="6" fill="#1E2832"/>
+<path id="progress-normal-topright" d="M56,294 C59.3,294 62,296.7 62,300 L56,300 Z" fill="#1E2832"/>
+<rect id="progress-normal-left" x="10" y="300" width="6" height="10" fill="#1E2832"/>
+<rect id="progress-normal" x="16" y="300" width="40" height="10" fill="#1E2832"/>
+<rect id="progress-normal-right" x="56" y="300" width="6" height="10" fill="#1E2832"/>
+<path id="progress-normal-bottomleft" d="M10,310 C10,313.3 12.7,316 16,316 L16,310 Z" fill="#1E2832"/>
+<rect id="progress-normal-bottom" x="16" y="310" width="40" height="6" fill="#1E2832"/>
+<path id="progress-normal-bottomright" d="M56,316 C59.3,316 62,313.3 62,310 L56,310 Z" fill="#1E2832"/>
+
+<!-- Filled (🍓 Pink) -->
+<path id="progress-pattern-normal-topleft" d="M70,300 C70,296.7 72.7,294 76,294 L76,300 Z" fill="#E07A9B"/>
+<rect id="progress-pattern-normal-top" x="76" y="294" width="40" height="6" fill="#E07A9B"/>
+<path id="progress-pattern-normal-topright" d="M116,294 C119.3,294 122,296.7 122,300 L116,300 Z" fill="#E07A9B"/>
+<rect id="progress-pattern-normal-left" x="70" y="300" width="6" height="10" fill="#E07A9B"/>
+<rect id="progress-pattern-normal" x="76" y="300" width="40" height="10" fill="#E07A9B"/>
+<rect id="progress-pattern-normal-right" x="116" y="300" width="6" height="10" fill="#E07A9B"/>
+<path id="progress-pattern-normal-bottomleft" d="M70,310 C70,313.3 72.7,316 76,316 L76,310 Z" fill="#E07A9B"/>
+<rect id="progress-pattern-normal-bottom" x="76" y="310" width="40" height="6" fill="#E07A9B"/>
+<path id="progress-pattern-normal-bottomright" d="M116,316 C119.3,316 122,313.3 122,310 L116,310 Z" fill="#E07A9B"/>
+
+<!-- Disabled -->
+<path id="progress-pattern-disabled-topleft" d="M130,300 C130,296.7 132.7,294 136,294 L136,300 Z" fill="#4A5F75"/>
+<rect id="progress-pattern-disabled-top" x="136" y="294" width="40" height="6" fill="#4A5F75"/>
+<path id="progress-pattern-disabled-topright" d="M176,294 C179.3,294 182,296.7 182,300 L176,300 Z" fill="#4A5F75"/>
+<rect id="progress-pattern-disabled-left" x="130" y="300" width="6" height="10" fill="#4A5F75"/>
+<rect id="progress-pattern-disabled" x="136" y="300" width="40" height="10" fill="#4A5F75"/>
+<rect id="progress-pattern-disabled-right" x="176" y="300" width="6" height="10" fill="#4A5F75"/>
+<path id="progress-pattern-disabled-bottomleft" d="M130,310 C130,313.3 132.7,316 136,316 L136,310 Z" fill="#4A5F75"/>
+<rect id="progress-pattern-disabled-bottom" x="136" y="310" width="40" height="6" fill="#4A5F75"/>
+<path id="progress-pattern-disabled-bottomright" d="M176,316 C179.3,316 182,313.3 182,310 L176,310 Z" fill="#4A5F75"/>
+
+<!-- ============================================================================
+     TABS - 💎 Crystal Platforms
+     ============================================================================ -->
+
+<rect id="tab-normal" x="10" y="330" width="80" height="30" fill="#253545"/>
+<rect id="tab-focused" x="100" y="330" width="80" height="30" fill="#3D4E5C"/>
+<rect id="tab-pressed" x="190" y="330" width="80" height="30" fill="#1E2832"/>
+
+<!-- Active tab with accent bar -->
+<g id="tab-toggled">
+  <rect x="280" y="330" width="80" height="30" fill="#2C3E50"/>
+  <rect x="280" y="330" width="80" height="3" fill="#86BBD8"/>
+</g>
+
+<rect id="tabframe-normal" x="10" y="370" width="200" height="60" fill="#1E2832"/>
+
+<!-- ============================================================================
+     MENU - Pause Menu
+     ============================================================================ -->
+
+<rect id="menu-normal" x="10" y="450" width="150" height="120" fill="#1E2832"/>
+
+<rect id="menuitem-normal" x="170" y="450" width="120" height="28" fill="#1E2832" fill-opacity="0"/>
+<rect id="menuitem-focused" x="170" y="485" width="120" height="28" fill="#86BBD8"/>
+<rect id="menuitem-pressed" x="170" y="520" width="120" height="28" fill="#5A8CAE"/>
+
+<!-- ============================================================================
+     MENUBAR
+     ============================================================================ -->
+
+<rect id="menubar-normal" x="10" y="590" width="300" height="28" fill="#1E2832"/>
+<rect id="menubaritem-normal" x="10" y="625" width="70" height="24" fill="#1E2832" fill-opacity="0"/>
+<rect id="menubaritem-focused" x="90" y="625" width="70" height="24" fill="#3D4E5C"/>
+<rect id="menubaritem-pressed" x="170" y="625" width="70" height="24" fill="#253545"/>
+
+<!-- ============================================================================
+     TOOLTIP - Granny's Hints
+     ============================================================================ -->
+
+<rect id="tooltip-normal" x="10" y="660" width="150" height="50" fill="#2C3E50"/>
+
+<!-- ============================================================================
+     COMMON FRAME
+     ============================================================================ -->
+
+<rect id="common-normal" x="10" y="720" width="120" height="60" fill="#1E2832" fill-opacity="0" stroke="#3D4E5C" stroke-width="1"/>
+
+<!-- ============================================================================
+     ITEMVIEW - Selection
+     ============================================================================ -->
+
+<rect id="itemview-normal" x="10" y="800" width="120" height="26" fill="#1E2832" fill-opacity="0"/>
+<rect id="itemview-focused" x="10" y="835" width="120" height="26" fill="#3D4E5C"/>
+<rect id="itemview-pressed" x="10" y="870" width="120" height="26" fill="#86BBD8"/>
+<rect id="itemview-toggled" x="10" y="905" width="120" height="26" fill="#86BBD8"/>
+
+<!-- ============================================================================
+     HEADER
+     ============================================================================ -->
+
+<rect id="header-normal" x="150" y="800" width="80" height="24" fill="#253545"/>
+<rect id="header-focused" x="150" y="830" width="80" height="24" fill="#3D4E5C"/>
+<rect id="header-pressed" x="150" y="860" width="80" height="24" fill="#2C3E50"/>
+<rect id="header-toggled" x="150" y="890" width="80" height="24" fill="#86BBD8"/>
+
+<!-- ============================================================================
+     DOCK
+     ============================================================================ -->
+
+<rect id="dock-normal" x="250" y="800" width="100" height="80" fill="#1E2832"/>
+<rect id="dock-focused" x="360" y="800" width="100" height="80" fill="#253545"/>
+
+<!-- ============================================================================
+     ARROWS - 🪶 Feather Directions
+     ============================================================================ -->
+
+<!-- Up -->
+<g id="arrow-up-normal" transform="translate(10,950)">
+  <rect width="24" height="24" fill="none"/>
+  <path d="M12,7 L5,17 L12,14 L19,17 Z" fill="#B8C5D0"/>
+</g>
+<g id="arrow-up-focused" transform="translate(40,950)">
+  <rect width="24" height="24" fill="none"/>
+  <path d="M12,7 L5,17 L12,14 L19,17 Z" fill="#86BBD8"/>
+</g>
+<g id="arrow-up-pressed" transform="translate(70,950)">
+  <rect width="24" height="24" fill="none"/>
+  <path d="M12,7 L5,17 L12,14 L19,17 Z" fill="#7FCAE5"/>
+</g>
+<g id="arrow-up-disabled" transform="translate(100,950)">
+  <rect width="24" height="24" fill="none"/>
+  <path d="M12,7 L5,17 L12,14 L19,17 Z" fill="#4A5F75"/>
+</g>
+
+<!-- Down -->
+<g id="arrow-down-normal" transform="translate(130,950)">
+  <rect width="24" height="24" fill="none"/>
+  <path d="M12,17 L5,7 L12,10 L19,7 Z" fill="#B8C5D0"/>
+</g>
+<g id="arrow-down-focused" transform="translate(160,950)">
+  <rect width="24" height="24" fill="none"/>
+  <path d="M12,17 L5,7 L12,10 L19,7 Z" fill="#86BBD8"/>
+</g>
+<g id="arrow-down-pressed" transform="translate(190,950)">
+  <rect width="24" height="24" fill="none"/>
+  <path d="M12,17 L5,7 L12,10 L19,7 Z" fill="#7FCAE5"/>
+</g>
+<g id="arrow-down-disabled" transform="translate(220,950)">
+  <rect width="24" height="24" fill="none"/>
+  <path d="M12,17 L5,7 L12,10 L19,7 Z" fill="#4A5F75"/>
+</g>
+
+<!-- Left -->
+<g id="arrow-left-normal" transform="translate(250,950)">
+  <rect width="24" height="24" fill="none"/>
+  <path d="M7,12 L17,5 L14,12 L17,19 Z" fill="#B8C5D0"/>
+</g>
+<g id="arrow-left-focused" transform="translate(280,950)">
+  <rect width="24" height="24" fill="none"/>
+  <path d="M7,12 L17,5 L14,12 L17,19 Z" fill="#86BBD8"/>
+</g>
+<g id="arrow-left-pressed" transform="translate(310,950)">
+  <rect width="24" height="24" fill="none"/>
+  <path d="M7,12 L17,5 L14,12 L17,19 Z" fill="#7FCAE5"/>
+</g>
+<g id="arrow-left-disabled" transform="translate(340,950)">
+  <rect width="24" height="24" fill="none"/>
+  <path d="M7,12 L17,5 L14,12 L17,19 Z" fill="#4A5F75"/>
+</g>
+
+<!-- Right -->
+<g id="arrow-right-normal" transform="translate(370,950)">
+  <rect width="24" height="24" fill="none"/>
+  <path d="M17,12 L7,5 L10,12 L7,19 Z" fill="#B8C5D0"/>
+</g>
+<g id="arrow-right-focused" transform="translate(400,950)">
+  <rect width="24" height="24" fill="none"/>
+  <path d="M17,12 L7,5 L10,12 L7,19 Z" fill="#86BBD8"/>
+</g>
+<g id="arrow-right-pressed" transform="translate(430,950)">
+  <rect width="24" height="24" fill="none"/>
+  <path d="M17,12 L7,5 L10,12 L7,19 Z" fill="#7FCAE5"/>
+</g>
+<g id="arrow-right-disabled" transform="translate(460,950)">
+  <rect width="24" height="24" fill="none"/>
+  <path d="M17,12 L7,5 L10,12 L7,19 Z" fill="#4A5F75"/>
+</g>
+
+<!-- Combo Arrow (carrow) -->
+<g id="carrow-normal" transform="translate(10,990)">
+  <rect width="20" height="20" fill="none"/>
+  <path d="M5,7 L10,13 L15,7" stroke="#B8C5D0" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="carrow-focused" transform="translate(35,990)">
+  <rect width="20" height="20" fill="none"/>
+  <path d="M5,7 L10,13 L15,7" stroke="#86BBD8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="carrow-pressed" transform="translate(60,990)">
+  <rect width="20" height="20" fill="none"/>
+  <path d="M5,13 L10,7 L15,13" stroke="#7FCAE5" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="carrow-disabled" transform="translate(85,990)">
+  <rect width="20" height="20" fill="none"/>
+  <path d="M5,7 L10,13 L15,7" stroke="#4A5F75" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+<!-- ============================================================================
+     SPIN INDICATORS
+     ============================================================================ -->
+
+<g id="spin-plus-normal" transform="translate(120,990)">
+  <rect width="16" height="16" fill="none"/>
+  <path d="M8,4 L8,12 M4,8 L12,8" stroke="#B8C5D0" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g id="spin-plus-focused" transform="translate(140,990)">
+  <rect width="16" height="16" fill="none"/>
+  <path d="M8,4 L8,12 M4,8 L12,8" stroke="#86BBD8" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g id="spin-plus-pressed" transform="translate(160,990)">
+  <rect width="16" height="16" fill="none"/>
+  <path d="M8,4 L8,12 M4,8 L12,8" stroke="#7FCAE5" stroke-width="2" stroke-linecap="round"/>
+</g>
+
+<g id="spin-minus-normal" transform="translate(180,990)">
+  <rect width="16" height="16" fill="none"/>
+  <path d="M4,8 L12,8" stroke="#B8C5D0" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g id="spin-minus-focused" transform="translate(200,990)">
+  <rect width="16" height="16" fill="none"/>
+  <path d="M4,8 L12,8" stroke="#86BBD8" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g id="spin-minus-pressed" transform="translate(220,990)">
+  <rect width="16" height="16" fill="none"/>
+  <path d="M4,8 L12,8" stroke="#7FCAE5" stroke-width="2" stroke-linecap="round"/>
+</g>
+
+<!-- ============================================================================
+     TREE EXPANDER - 🏔️ Mountain Paths
+     ============================================================================ -->
+
+<g id="tree-normal" transform="translate(250,990)">
+  <rect width="14" height="14" fill="none"/>
+  <path d="M4,7 L10,7 M7,4 L7,10" stroke="#B8C5D0" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g id="tree-focused" transform="translate(270,990)">
+  <rect width="14" height="14" fill="none"/>
+  <path d="M4,7 L10,7 M7,4 L7,10" stroke="#86BBD8" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g id="tree-pressed" transform="translate(290,990)">
+  <rect width="14" height="14" fill="none"/>
+  <path d="M4,7 L10,7" stroke="#7FCAE5" stroke-width="2" stroke-linecap="round"/>
+</g>
+
+<!-- ============================================================================
+     RESIZE GRIP
+     ============================================================================ -->
+
+<g id="resize-grip-normal" transform="translate(320,990)">
+  <rect width="16" height="16" fill="none"/>
+  <circle cx="12" cy="12" r="1.5" fill="#4A5F75"/>
+  <circle cx="8" cy="12" r="1.5" fill="#4A5F75"/>
+  <circle cx="12" cy="8" r="1.5" fill="#4A5F75"/>
+  <circle cx="4" cy="12" r="1.5" fill="#4A5F75"/>
+  <circle cx="8" cy="8" r="1.5" fill="#4A5F75"/>
+  <circle cx="12" cy="4" r="1.5" fill="#4A5F75"/>
+</g>
+
+<!-- ============================================================================
+     MDI BUTTONS - Window Controls
+     ============================================================================ -->
+
+<!-- Close (🍓 Pink on hover) -->
+<g id="mdi-close-normal" transform="translate(10,1030)">
+  <rect width="14" height="14" fill="none"/>
+  <path d="M3,3 L11,11 M11,3 L3,11" stroke="#B8C5D0" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g id="mdi-close-focused" transform="translate(30,1030)">
+  <rect width="14" height="14" fill="none"/>
+  <path d="M3,3 L11,11 M11,3 L3,11" stroke="#E07A9B" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g id="mdi-close-pressed" transform="translate(50,1030)">
+  <rect width="14" height="14" fill="none"/>
+  <path d="M3,3 L11,11 M11,3 L3,11" stroke="#F4A6B8" stroke-width="2" stroke-linecap="round"/>
+</g>
+
+<!-- Minimize -->
+<g id="mdi-minimize-normal" transform="translate(80,1030)">
+  <rect width="14" height="14" fill="none"/>
+  <path d="M3,11 L11,11" stroke="#B8C5D0" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g id="mdi-minimize-focused" transform="translate(100,1030)">
+  <rect width="14" height="14" fill="none"/>
+  <path d="M3,11 L11,11" stroke="#86BBD8" stroke-width="2" stroke-linecap="round"/>
+</g>
+
+<!-- Maximize -->
+<g id="mdi-maximize-normal" transform="translate(130,1030)">
+  <rect width="14" height="14" fill="none"/>
+  <rect x="2" y="2" width="10" height="10" rx="1" stroke="#B8C5D0" stroke-width="1.5" fill="none"/>
+</g>
+<g id="mdi-maximize-focused" transform="translate(150,1030)">
+  <rect width="14" height="14" fill="none"/>
+  <rect x="2" y="2" width="10" height="10" rx="1" stroke="#86BBD8" stroke-width="1.5" fill="none"/>
+</g>
+
+<!-- Restore -->
+<g id="mdi-restore-normal" transform="translate(180,1030)">
+  <rect width="14" height="14" fill="none"/>
+  <rect x="4" y="1" width="8" height="8" rx="1" stroke="#B8C5D0" stroke-width="1.5" fill="none"/>
+  <rect x="2" y="5" width="8" height="8" rx="1" stroke="#B8C5D0" stroke-width="1.5" fill="#1E2832"/>
+</g>
+<g id="mdi-restore-focused" transform="translate(200,1030)">
+  <rect width="14" height="14" fill="none"/>
+  <rect x="4" y="1" width="8" height="8" rx="1" stroke="#86BBD8" stroke-width="1.5" fill="none"/>
+  <rect x="2" y="5" width="8" height="8" rx="1" stroke="#86BBD8" stroke-width="1.5" fill="#1E2832"/>
+</g>
+
+<!-- ============================================================================
+     WINDOW & TITLEBAR
+     ============================================================================ -->
+
+<rect id="window-normal" x="10" y="1060" width="200" height="40" fill="#1E2832"/>
+<rect id="titlebar-normal" x="10" y="1110" width="200" height="28" fill="#1E2832"/>
+<rect id="titlebar-focused" x="220" y="1110" width="200" height="28" fill="#253545"/>
+
+<!-- ============================================================================
+     DIAL - Crystal Orb Control
+     ============================================================================ -->
+
+<circle id="dial" cx="50" cy="1170" r="20" fill="#2C3E50"/>
+<circle id="dial-handle" cx="50" cy="1155" r="4" fill="#86BBD8"/>
+
+<!-- ============================================================================
+     TOOLBAR HANDLE
+     ============================================================================ -->
+
+<circle id="toolbar-handle" cx="100" cy="1170" r="4" fill="#4A5F75"/>
+
+<!-- ============================================================================
+     SPLITTER
+     ============================================================================ -->
+
+<rect id="splitter-normal" x="120" y="1165" width="3" height="30" fill="#4A5F75"/>
+
+</svg>

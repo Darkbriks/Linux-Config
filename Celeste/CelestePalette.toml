@@ -1,0 +1,130 @@
+# ============================================================================
+# Celeste Ricing Color Scheme
+# ============================================================================
+
+# ============================================================================
+# PALETTE LIGHT
+# ============================================================================
+[light]
+
+# --- Base colors ---
+background = "#FAF8F5"           # Fond principal (nuage léger)
+foreground = "#3D4E5C"           # Texte principal (gris-bleu profond)
+cursor = "#E07A9B"               # Curseur (cheveux Madeline)
+cursor_text = "#FAF8F5"          # Texte sous curseur
+selection_bg = "#E8D4E0"         # Sélection (rose très pâle)
+selection_fg = "#3D4E5C"         # Texte sélectionné
+
+# --- Normal colors (0-7) ---
+color0 = "#D8D5D0"               # Noir -> gris très clair (nuages)
+color1 = "#E07A9B"               # Rouge -> rose Madeline
+color2 = "#A8D5BA"               # Vert -> cristal vert
+color3 = "#F4D58D"               # Jaune -> golden berry
+color4 = "#86BBD8"               # Bleu -> ciel moyen
+color5 = "#C2A1D3"               # Magenta -> montagne violet
+color6 = "#7FCAE5"               # Cyan -> cristal cyan
+color7 = "#3D4E5C"               # Blanc -> texte principal
+
+# --- Bright colors (8-15) ---
+color8 = "#B8B3AD"               # Noir bright -> gris moyen
+color9 = "#F29191"               # Rouge bright -> strawberry
+color10 = "#BFE5CE"              # Vert bright -> cristal vert clair
+color11 = "#F9E4B3"              # Jaune bright -> berry très clair
+color12 = "#B4D4E1"              # Bleu bright -> ciel clair
+color13 = "#F4A6B8"              # Magenta bright -> montagne rose
+color14 = "#A8E4F5"              # Cyan bright -> cyan très clair
+color15 = "#F0EDE5"              # Blanc bright -> cristal blanc
+
+# --- Accent colors ---
+accent_primary = "#86BBD8"       # Bleu ciel (boutons, liens)
+accent_secondary = "#C2A1D3"     # Violet montagne (hover)
+accent_danger = "#E07A9B"        # Rose (actions destructives)
+accent_success = "#A8D5BA"       # Vert cristal (succès)
+accent_warning = "#F4D58D"       # Jaune berry (avertissement)
+
+# --- UI elements ---
+border = "#C8D5DD"               # Bordures légères
+border_active = "#86BBD8"        # Bordure fenêtre active
+separator = "#E0DDD8"            # Séparateurs
+shadow = "#3D4E5C40"             # Ombres (40 = 25% opacité)
+
+
+# ============================================================================
+# PALETTE DARK
+# ============================================================================
+[dark]
+
+# --- Base colors ---
+background = "#1E2832"           # Fond principal (nuit montagne)
+foreground = "#E8E4DF"           # Texte principal (nuage clair)
+cursor = "#F4A6B8"               # Curseur (rose montagne bright)
+cursor_text = "#1E2832"          # Texte sous curseur
+selection_bg = "#3D4E5C"         # Sélection (bleu-gris profond)
+selection_fg = "#E8E4DF"         # Texte sélectionné
+
+# --- Normal colors (0-7) ---
+color0 = "#2C3E50"               # Noir -> fond secondaire
+color1 = "#E07A9B"               # Rouge -> rose Madeline
+color2 = "#A8D5BA"               # Vert -> cristal vert
+color3 = "#F4D58D"               # Jaune -> golden berry
+color4 = "#86BBD8"               # Bleu -> ciel moyen
+color5 = "#C2A1D3"               # Magenta -> montagne violet
+color6 = "#7FCAE5"               # Cyan -> cristal cyan
+color7 = "#B8C5D0"               # Blanc -> texte secondaire
+
+# --- Bright colors (8-15) ---
+color8 = "#4A5F75"               # Noir bright -> gris-bleu
+color9 = "#F4A6B8"               # Rouge bright -> rose montagne
+color10 = "#BFE5CE"              # Vert bright -> cristal vert clair
+color11 = "#F9E4B3"              # Jaune bright -> berry clair
+color12 = "#B4D4E1"              # Bleu bright -> ciel clair
+color13 = "#E5C3E8"              # Magenta bright -> violet très clair
+color14 = "#A8E4F5"              # Cyan bright -> cyan très clair
+color15 = "#F0EDE5"              # Blanc bright -> cristal blanc
+
+# --- Accent colors ---
+accent_primary = "#86BBD8"       # Bleu ciel (boutons, liens)
+accent_secondary = "#C2A1D3"     # Violet montagne (hover)
+accent_danger = "#F4A6B8"        # Rose montagne (actions destructives)
+accent_success = "#A8D5BA"       # Vert cristal (succès)
+accent_warning = "#F4D58D"       # Jaune berry (avertissement)
+
+# --- UI elements ---
+border = "#3D4E5C"               # Bordures
+border_active = "#86BBD8"        # Bordure fenêtre active
+separator = "#2C3E50"            # Séparateurs
+shadow = "#00000060"             # Ombres (60 = 38% opacité)
+
+
+# ============================================================================
+# COULEURS THÉMATIQUES CELESTE (communes aux deux palettes)
+# ============================================================================
+[celeste]
+
+# --- Éléments du jeu ---
+sky_light = "#B4D4E1"
+sky_medium = "#86BBD8"
+sky_dark = "#5A8CAE"
+
+mountain_pink = "#F4A6B8"
+mountain_purple = "#C2A1D3"
+mountain_shadow = "#8B7AA8"
+
+madeline_hair = "#E07A9B"
+strawberry = "#F29191"
+golden_berry = "#F4D58D"
+
+crystal_cyan = "#7FCAE5"
+crystal_green = "#A8D5BA"
+crystal_white = "#F0EDE5"
+
+# --- Zones/Chapitres ---
+forsaken_city = "#86BBD8"        # Bleu ciel
+old_site = "#A8D5BA"             # Vert cristal
+celestial_resort = "#F4D58D"     # Doré
+golden_ridge = "#F9E4B3"         # Doré clair
+mirror_temple = "#C2A1D3"        # Violet
+reflection = "#8B7AA8"           # Violet sombre
+summit = "#F4A6B8"               # Rose montagne
+core = "#E07A9B"                 # Rose intense
+farewell = "#E5C3E8"             # Violet clair
