@@ -73,14 +73,14 @@ light.color=#4A5F75
 mid.light.color=#3D4E5C
 dark.color=#151C24
 mid.color=#1A2530
-highlight.color=#86BBD8
-inactive.highlight.color=#5A8CAE
+highlight.color=#5A8CAE
+inactive.highlight.color=#4A7A9E
 text.color=#E8E4DF
 window.text.color=#E8E4DF
 button.text.color=#E8E4DF
 disabled.text.color=#6B7F8C
 tooltip.text.color=#F0EDE5
-highlight.text.color=#1E2832
+highlight.text.color=#F0EDE5
 link.color=#7FCAE5
 link.visited.color=#C2A1D3
 progress.indicator.text.color=#1E2832
@@ -118,7 +118,7 @@ indicator.size=10
 text.normal.color=#E8E4DF
 text.focus.color=#F0EDE5
 text.press.color=#F0EDE5
-text.toggle.color=#1E2832
+text.toggle.color=#F0EDE5
 text.shadow=0
 text.margin=1
 text.iconspacing=4
@@ -154,7 +154,7 @@ inherits=PanelButtonCommand
 frame=true
 interior=true
 indicator.element=spin
-indicator.size=12
+indicator.size=10
 
 [RadioButton]
 inherits=PanelButtonCommand
@@ -182,10 +182,10 @@ frame=true
 interior=false
 frame.element=common
 interior.element=common
-frame.top=3
-frame.bottom=3
-frame.left=3
-frame.right=3
+frame.top=1
+frame.bottom=1
+frame.left=1
+frame.right=1
 
 [LineEdit]
 inherits=PanelButtonCommand
@@ -208,10 +208,10 @@ inherits=PanelButtonCommand
 interior.element=tab
 frame.element=tab
 indicator.element=tab
-frame.top=4
-frame.bottom=4
-frame.left=4
-frame.right=4
+frame.top=2
+frame.bottom=2
+frame.left=2
+frame.right=2
 text.margin.left=8
 text.margin.right=8
 text.normal.color=#B8C5D0
@@ -221,12 +221,22 @@ frame.expansion=0
 
 [TabFrame]
 inherits=PanelButtonCommand
-frame.element=tabframe
+frame=false
+interior=true
 interior.element=tabframe
-frame.top=4
-frame.bottom=4
-frame.left=4
-frame.right=4
+frame.top=0
+frame.bottom=0
+frame.left=0
+frame.right=0
+
+[TabBarFrame]
+inherits=PanelButtonCommand
+frame=false
+interior=false
+frame.top=0
+frame.bottom=0
+frame.left=0
+frame.right=0
 
 [TreeExpander]
 inherits=PanelButtonCommand
@@ -330,7 +340,7 @@ frame.element=menuitem
 interior.element=menuitem
 indicator.element=menuitem
 text.normal.color=#E8E4DF
-text.focus.color=#1E2832
+text.focus.color=#F0EDE5
 text.margin.top=2
 text.margin.bottom=2
 text.margin.left=15
@@ -399,12 +409,6 @@ text.normal.color=#B8C5D0
 text.focus.color=#86BBD8
 text.bold=true
 frame.expansion=0
-
-[TabBarFrame]
-inherits=GenericFrame
-frame=true
-frame.element=tabBarFrame
-interior=false
 
 [ToolTip]
 inherits=GenericFrame

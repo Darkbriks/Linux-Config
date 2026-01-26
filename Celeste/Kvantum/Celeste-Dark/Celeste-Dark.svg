@@ -67,13 +67,13 @@
 </g>
 
 <!-- ============================================================================
-     BUTTONS - Ice Platforms (Simple flat fills, no inset)
+     BUTTONS - Ice Platforms
      ============================================================================ -->
 
 <rect id="button-normal" x="10" y="70" width="60" height="24" fill="#2C3E50"/>
 <rect id="button-focused" x="80" y="70" width="60" height="24" fill="#3D4E5C"/>
 <rect id="button-pressed" x="150" y="70" width="60" height="24" fill="#253545"/>
-<rect id="button-toggled" x="220" y="70" width="60" height="24" fill="#86BBD8"/>
+<rect id="button-toggled" x="220" y="70" width="60" height="24" fill="#5A8CAE"/>
 <rect id="button-disabled" x="290" y="70" width="60" height="24" fill="#1E2832"/>
 
 <!-- ============================================================================
@@ -242,8 +242,8 @@
 <rect id="menu-normal" x="10" y="450" width="150" height="120" fill="#1E2832"/>
 
 <rect id="menuitem-normal" x="170" y="450" width="120" height="28" fill="#1E2832" fill-opacity="0"/>
-<rect id="menuitem-focused" x="170" y="485" width="120" height="28" fill="#86BBD8"/>
-<rect id="menuitem-pressed" x="170" y="520" width="120" height="28" fill="#5A8CAE"/>
+<rect id="menuitem-focused" x="170" y="485" width="120" height="28" fill="#3D4E5C"/>
+<rect id="menuitem-pressed" x="170" y="520" width="120" height="28" fill="#4A5F75"/>
 
 <!-- ============================================================================
      MENUBAR
@@ -264,7 +264,7 @@
      COMMON FRAME
      ============================================================================ -->
 
-<rect id="common-normal" x="10" y="720" width="120" height="60" fill="#1E2832" fill-opacity="0" stroke="#3D4E5C" stroke-width="1"/>
+<rect id="common-normal" x="10" y="720" width="120" height="60" fill="none" stroke="#3D4E5C" stroke-width="1"/>
 
 <!-- ============================================================================
      ITEMVIEW - Selection
@@ -272,8 +272,8 @@
 
 <rect id="itemview-normal" x="10" y="800" width="120" height="26" fill="#1E2832" fill-opacity="0"/>
 <rect id="itemview-focused" x="10" y="835" width="120" height="26" fill="#3D4E5C"/>
-<rect id="itemview-pressed" x="10" y="870" width="120" height="26" fill="#86BBD8"/>
-<rect id="itemview-toggled" x="10" y="905" width="120" height="26" fill="#86BBD8"/>
+<rect id="itemview-pressed" x="10" y="870" width="120" height="26" fill="#5A8CAE"/>
+<rect id="itemview-toggled" x="10" y="905" width="120" height="26" fill="#5A8CAE"/>
 
 <!-- ============================================================================
      HEADER
@@ -281,8 +281,8 @@
 
 <rect id="header-normal" x="150" y="800" width="80" height="24" fill="#253545"/>
 <rect id="header-focused" x="150" y="830" width="80" height="24" fill="#3D4E5C"/>
-<rect id="header-pressed" x="150" y="860" width="80" height="24" fill="#2C3E50"/>
-<rect id="header-toggled" x="150" y="890" width="80" height="24" fill="#86BBD8"/>
+<rect id="header-pressed" x="150" y="870" width="80" height="24" fill="#2C3E50"/>
+<rect id="header-toggled" x="150" y="900" width="80" height="24" fill="#5A8CAE"/>
 
 <!-- ============================================================================
      DOCK
@@ -389,54 +389,115 @@
      SPIN INDICATORS
      ============================================================================ -->
 
-<g id="spin-plus-normal" transform="translate(120,990)">
+<!-- Spin Plus -->
+<g id="spin-plus-normal" transform="translate(110,1020)">
   <rect width="16" height="16" fill="none"/>
-  <path d="M8,4 L8,12 M4,8 L12,8" stroke="#B8C5D0" stroke-width="2" stroke-linecap="round"/>
+  <rect x="7" y="3" width="2" height="10" fill="#B8C5D0"/>
+  <rect x="3" y="7" width="10" height="2" fill="#B8C5D0"/>
 </g>
-<g id="spin-plus-focused" transform="translate(140,990)">
+<g id="spin-plus-focused" transform="translate(130,1020)">
   <rect width="16" height="16" fill="none"/>
-  <path d="M8,4 L8,12 M4,8 L12,8" stroke="#86BBD8" stroke-width="2" stroke-linecap="round"/>
+  <rect x="7" y="3" width="2" height="10" fill="#86BBD8"/>
+  <rect x="3" y="7" width="10" height="2" fill="#86BBD8"/>
 </g>
-<g id="spin-plus-pressed" transform="translate(160,990)">
+<g id="spin-plus-pressed" transform="translate(150,1020)">
   <rect width="16" height="16" fill="none"/>
-  <path d="M8,4 L8,12 M4,8 L12,8" stroke="#7FCAE5" stroke-width="2" stroke-linecap="round"/>
+  <rect x="7" y="3" width="2" height="10" fill="#7FCAE5"/>
+  <rect x="3" y="7" width="10" height="2" fill="#7FCAE5"/>
+</g>
+<g id="spin-plus-disabled" transform="translate(170,1020)">
+  <rect width="16" height="16" fill="none"/>
+  <rect x="7" y="3" width="2" height="10" fill="#4A5F75"/>
+  <rect x="3" y="7" width="10" height="2" fill="#4A5F75"/>
 </g>
 
-<g id="spin-minus-normal" transform="translate(180,990)">
+<!-- Spin Minus -->
+<g id="spin-minus-normal" transform="translate(190,1020)">
   <rect width="16" height="16" fill="none"/>
-  <path d="M4,8 L12,8" stroke="#B8C5D0" stroke-width="2" stroke-linecap="round"/>
+  <rect x="3" y="7" width="10" height="2" fill="#B8C5D0"/>
 </g>
-<g id="spin-minus-focused" transform="translate(200,990)">
+<g id="spin-minus-focused" transform="translate(210,1020)">
   <rect width="16" height="16" fill="none"/>
-  <path d="M4,8 L12,8" stroke="#86BBD8" stroke-width="2" stroke-linecap="round"/>
+  <rect x="3" y="7" width="10" height="2" fill="#86BBD8"/>
 </g>
-<g id="spin-minus-pressed" transform="translate(220,990)">
+<g id="spin-minus-pressed" transform="translate(230,1020)">
   <rect width="16" height="16" fill="none"/>
-  <path d="M4,8 L12,8" stroke="#7FCAE5" stroke-width="2" stroke-linecap="round"/>
+  <rect x="3" y="7" width="10" height="2" fill="#7FCAE5"/>
+</g>
+<g id="spin-minus-disabled" transform="translate(250,1020)">
+  <rect width="16" height="16" fill="none"/>
+  <rect x="3" y="7" width="10" height="2" fill="#4A5F75"/>
+</g>
+
+<!-- Spin Up (same as plus for spinbox) -->
+<g id="spin-up-normal" transform="translate(270,1020)">
+  <rect width="16" height="16" fill="none"/>
+  <rect x="7" y="3" width="2" height="10" fill="#B8C5D0"/>
+  <rect x="3" y="7" width="10" height="2" fill="#B8C5D0"/>
+</g>
+<g id="spin-up-focused" transform="translate(290,1020)">
+  <rect width="16" height="16" fill="none"/>
+  <rect x="7" y="3" width="2" height="10" fill="#86BBD8"/>
+  <rect x="3" y="7" width="10" height="2" fill="#86BBD8"/>
+</g>
+<g id="spin-up-pressed" transform="translate(310,1020)">
+  <rect width="16" height="16" fill="none"/>
+  <rect x="7" y="3" width="2" height="10" fill="#7FCAE5"/>
+  <rect x="3" y="7" width="10" height="2" fill="#7FCAE5"/>
+</g>
+<g id="spin-up-disabled" transform="translate(330,1020)">
+  <rect width="16" height="16" fill="none"/>
+  <rect x="7" y="3" width="2" height="10" fill="#4A5F75"/>
+  <rect x="3" y="7" width="10" height="2" fill="#4A5F75"/>
+</g>
+
+<!-- Spin Down (same as minus for spinbox) -->
+<g id="spin-down-normal" transform="translate(350,1020)">
+  <rect width="16" height="16" fill="none"/>
+  <rect x="3" y="7" width="10" height="2" fill="#B8C5D0"/>
+</g>
+<g id="spin-down-focused" transform="translate(370,1020)">
+  <rect width="16" height="16" fill="none"/>
+  <rect x="3" y="7" width="10" height="2" fill="#86BBD8"/>
+</g>
+<g id="spin-down-pressed" transform="translate(390,1020)">
+  <rect width="16" height="16" fill="none"/>
+  <rect x="3" y="7" width="10" height="2" fill="#7FCAE5"/>
+</g>
+<g id="spin-down-disabled" transform="translate(410,1020)">
+  <rect width="16" height="16" fill="none"/>
+  <rect x="3" y="7" width="10" height="2" fill="#4A5F75"/>
 </g>
 
 <!-- ============================================================================
      TREE EXPANDER - 🏔️ Mountain Paths
      ============================================================================ -->
 
-<g id="tree-normal" transform="translate(250,990)">
+<g id="tree-normal" transform="translate(10,1050)">
   <rect width="14" height="14" fill="none"/>
-  <path d="M4,7 L10,7 M7,4 L7,10" stroke="#B8C5D0" stroke-width="2" stroke-linecap="round"/>
+  <rect x="6" y="2" width="2" height="10" fill="#B8C5D0"/>
+  <rect x="2" y="6" width="10" height="2" fill="#B8C5D0"/>
 </g>
-<g id="tree-focused" transform="translate(270,990)">
+<g id="tree-focused" transform="translate(30,1050)">
   <rect width="14" height="14" fill="none"/>
-  <path d="M4,7 L10,7 M7,4 L7,10" stroke="#86BBD8" stroke-width="2" stroke-linecap="round"/>
+  <rect x="6" y="2" width="2" height="10" fill="#86BBD8"/>
+  <rect x="2" y="6" width="10" height="2" fill="#86BBD8"/>
 </g>
-<g id="tree-pressed" transform="translate(290,990)">
+<g id="tree-pressed" transform="translate(50,1050)">
   <rect width="14" height="14" fill="none"/>
-  <path d="M4,7 L10,7" stroke="#7FCAE5" stroke-width="2" stroke-linecap="round"/>
+  <rect x="2" y="6" width="10" height="2" fill="#7FCAE5"/>
+</g>
+<g id="tree-disabled" transform="translate(70,1050)">
+  <rect width="14" height="14" fill="none"/>
+  <rect x="6" y="2" width="2" height="10" fill="#4A5F75"/>
+  <rect x="2" y="6" width="10" height="2" fill="#4A5F75"/>
 </g>
 
 <!-- ============================================================================
      RESIZE GRIP
      ============================================================================ -->
 
-<g id="resize-grip-normal" transform="translate(320,990)">
+<g id="resize-grip-normal" transform="translate(100,1050)">
   <rect width="16" height="16" fill="none"/>
   <circle cx="12" cy="12" r="1.5" fill="#4A5F75"/>
   <circle cx="8" cy="12" r="1.5" fill="#4A5F75"/>
@@ -450,47 +511,43 @@
      MDI BUTTONS - Window Controls
      ============================================================================ -->
 
-<!-- Close (🍓 Pink on hover) -->
-<g id="mdi-close-normal" transform="translate(10,1030)">
+<g id="mdi-close-normal" transform="translate(10,1080)">
   <rect width="14" height="14" fill="none"/>
   <path d="M3,3 L11,11 M11,3 L3,11" stroke="#B8C5D0" stroke-width="2" stroke-linecap="round"/>
 </g>
-<g id="mdi-close-focused" transform="translate(30,1030)">
+<g id="mdi-close-focused" transform="translate(30,1080)">
   <rect width="14" height="14" fill="none"/>
   <path d="M3,3 L11,11 M11,3 L3,11" stroke="#E07A9B" stroke-width="2" stroke-linecap="round"/>
 </g>
-<g id="mdi-close-pressed" transform="translate(50,1030)">
+<g id="mdi-close-pressed" transform="translate(50,1080)">
   <rect width="14" height="14" fill="none"/>
   <path d="M3,3 L11,11 M11,3 L3,11" stroke="#F4A6B8" stroke-width="2" stroke-linecap="round"/>
 </g>
 
-<!-- Minimize -->
-<g id="mdi-minimize-normal" transform="translate(80,1030)">
+<g id="mdi-minimize-normal" transform="translate(80,1080)">
   <rect width="14" height="14" fill="none"/>
   <path d="M3,11 L11,11" stroke="#B8C5D0" stroke-width="2" stroke-linecap="round"/>
 </g>
-<g id="mdi-minimize-focused" transform="translate(100,1030)">
+<g id="mdi-minimize-focused" transform="translate(100,1080)">
   <rect width="14" height="14" fill="none"/>
   <path d="M3,11 L11,11" stroke="#86BBD8" stroke-width="2" stroke-linecap="round"/>
 </g>
 
-<!-- Maximize -->
-<g id="mdi-maximize-normal" transform="translate(130,1030)">
+<g id="mdi-maximize-normal" transform="translate(130,1080)">
   <rect width="14" height="14" fill="none"/>
   <rect x="2" y="2" width="10" height="10" rx="1" stroke="#B8C5D0" stroke-width="1.5" fill="none"/>
 </g>
-<g id="mdi-maximize-focused" transform="translate(150,1030)">
+<g id="mdi-maximize-focused" transform="translate(150,1080)">
   <rect width="14" height="14" fill="none"/>
   <rect x="2" y="2" width="10" height="10" rx="1" stroke="#86BBD8" stroke-width="1.5" fill="none"/>
 </g>
 
-<!-- Restore -->
-<g id="mdi-restore-normal" transform="translate(180,1030)">
+<g id="mdi-restore-normal" transform="translate(180,1080)">
   <rect width="14" height="14" fill="none"/>
   <rect x="4" y="1" width="8" height="8" rx="1" stroke="#B8C5D0" stroke-width="1.5" fill="none"/>
   <rect x="2" y="5" width="8" height="8" rx="1" stroke="#B8C5D0" stroke-width="1.5" fill="#1E2832"/>
 </g>
-<g id="mdi-restore-focused" transform="translate(200,1030)">
+<g id="mdi-restore-focused" transform="translate(200,1080)">
   <rect width="14" height="14" fill="none"/>
   <rect x="4" y="1" width="8" height="8" rx="1" stroke="#86BBD8" stroke-width="1.5" fill="none"/>
   <rect x="2" y="5" width="8" height="8" rx="1" stroke="#86BBD8" stroke-width="1.5" fill="#1E2832"/>
@@ -500,27 +557,27 @@
      WINDOW & TITLEBAR
      ============================================================================ -->
 
-<rect id="window-normal" x="10" y="1060" width="200" height="40" fill="#1E2832"/>
-<rect id="titlebar-normal" x="10" y="1110" width="200" height="28" fill="#1E2832"/>
-<rect id="titlebar-focused" x="220" y="1110" width="200" height="28" fill="#253545"/>
+<rect id="window-normal" x="10" y="1110" width="200" height="40" fill="#1E2832"/>
+<rect id="titlebar-normal" x="10" y="1160" width="200" height="28" fill="#1E2832"/>
+<rect id="titlebar-focused" x="220" y="1160" width="200" height="28" fill="#253545"/>
 
 <!-- ============================================================================
      DIAL - Crystal Orb Control
      ============================================================================ -->
 
-<circle id="dial" cx="50" cy="1170" r="20" fill="#2C3E50"/>
-<circle id="dial-handle" cx="50" cy="1155" r="4" fill="#86BBD8"/>
+<circle id="dial" cx="50" cy="1220" r="20" fill="#2C3E50"/>
+<circle id="dial-handle" cx="50" cy="1205" r="4" fill="#86BBD8"/>
 
 <!-- ============================================================================
      TOOLBAR HANDLE
      ============================================================================ -->
 
-<circle id="toolbar-handle" cx="100" cy="1170" r="4" fill="#4A5F75"/>
+<circle id="toolbar-handle" cx="100" cy="1220" r="4" fill="#4A5F75"/>
 
 <!-- ============================================================================
      SPLITTER
      ============================================================================ -->
 
-<rect id="splitter-normal" x="120" y="1165" width="3" height="30" fill="#4A5F75"/>
+<rect id="splitter-normal" x="120" y="1215" width="3" height="30" fill="#4A5F75"/>
 
 </svg>
