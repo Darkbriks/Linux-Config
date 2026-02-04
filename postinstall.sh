@@ -67,15 +67,19 @@ pacman -S --needed --noconfirm \
 # -------------------------------------------------
 # Graphique / GPU / Vulkan
 # -------------------------------------------------
-pacman -S --needed --noconfirm \
-  mesa-utils \
-  vulkan-radeon \
-  vulkan-headers \
-  vulkan-validation-layers \
-  xf86-video-amdgpu \
-  xf86-input-libinput \
-  xorg-server xorg-xinit \
-  xorg-xrandr xorg-xinput xorg-xkill xorg-xdpyinfo
+
+read -p "Installer les pilotes graphiques et Vulkan pour AMD ? (y/n) "
+if [[ "$REPLY" =~ ^[Yy]$ ]]; then
+  pacman -S --needed --noconfirm \
+    mesa-utils \
+    vulkan-radeon \
+    vulkan-headers \
+    vulkan-validation-layers \
+    xf86-video-amdgpu \
+    xf86-input-libinput \
+    xorg-server xorg-xinit \
+    xorg-xrandr xorg-xinput xorg-xkill xorg-xdpyinfo
+fi
 
 # -------------------------------------------------
 # KDE / Plasma usuel
@@ -128,20 +132,26 @@ pacman -S --needed --noconfirm \
 # -------------------------------------------------
 # Snapshots & boot
 # -------------------------------------------------
-yay -S --needed --noconfirm \
+pacman -S --needed --noconfirm \
   snap-pac \
   grub-btrfs
 
 # -------------------------------------------------
-# Applications AUR
+# Autres
 # -------------------------------------------------
-yay -S --needed --noconfirm \
-  brave-bin \
-  discord \
+pacman -S --needed --noconfirm \
   steam \
   obsidian \
-  jetbrains-toolbox \
-  protonup-qt
+  os-prober
+
+# -------------------------------------------------
+# Applications AUR
+# -------------------------------------------------
+#yay -S --needed --noconfirm \
+#  brave-bin \
+#  discord \
+#  jetbrains-toolbox \
+#  protonup-qt
 
 # -------------------------------------------------
 # Services systemd
@@ -154,8 +164,24 @@ systemctl enable --now \
   power-profiles-daemon \
   snapper-timeline.timer \
   snapper-cleanup.timer \
-  grub-btrfs.path \
+  grub-btrfsd \
   sddm
 
 echo "=== Installation terminée ==="
 echo "Un redémarrage est recommandé."
+
+echo "Autres actions recommandées :"
+echo "- Activer os-prober dans /etc/default/grub (GRUB_DISABLE_OS_PROBER=false) et regénérer grub avec 'grub-mkconfig -o /boot/grub/grub.cfg'"
+
+read -p "Générer une clé SSH pour git et sshd ? (y/n) "
+if [[ "$REPLY" =~ ^[Yy]$ ]]; then
+  ssh-keygen -t ed25519 -C "sshd key" -f ~/.ssh/id_ed25519 -N ""
+  echo "Clé SSH générée : ~/.ssh/id_ed25519"
+
+  read -p "Ajouter la clé à ssh-agent ? (y/n) "
+  if [[ "$REPLY" =~ ^[Yy]$ ]]; then
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/id_ed25519
+    echo "Clé SSH ajoutée à ssh-agent."
+  fi
+fi
